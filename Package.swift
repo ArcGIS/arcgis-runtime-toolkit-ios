@@ -52,7 +52,10 @@ let package = Package(
     targets: [
         .target(
             name: "ArcGISToolkit",
-            dependencies: [.product(name: "ArcGIS", package: "arcgis-runtime-ios")]
+            dependencies: [.product(name: "ArcGIS", package: "arcgis-runtime-ios")],
+            resources: [
+                .copy("PrivacyInfo.xcprivacy")
+            ]
         ),
         .testTarget(
             name: "ArcGISToolkitTests",
