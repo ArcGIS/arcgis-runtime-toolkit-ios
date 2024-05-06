@@ -54,7 +54,7 @@ let package = Package(
             name: "ArcGISToolkit",
             dependencies: [.product(name: "ArcGIS", package: "arcgis-runtime-ios")],
             resources: [
-                .copy("PrivacyInfo.xcprivacy")
+                .process("Resources/PrivacyInfo.xcprivacy")
             ]
         ),
         .testTarget(
